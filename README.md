@@ -4,45 +4,45 @@
 of your choice. It uses `openvpn` to connect you to a server obtained
 from [VPN Gate](http://www.vpngate.net/en/).
 
-### Compiling
+## Compiling
 
 First clone the repo and `cd` into the directory:
 
 ```bash
-$ git clone https://github.com/adtac/autovpn
-$ cd autovpn
+git clone https://github.com/LavyshAlexander/autovpn.git AutoVPN
+cd autovpn
 ```
 
 Then run this to generate the executable:
 
 ```bash
-$ go build autovpn.go
+go build autovpn.go
 ```
 
 It's Go. What do you expect?
 
-### Requirements
+## Requirements
 
 This requires `openvpn`. To install this on a `yum`-based distro:
 
 ```bash
-$ sudo dnf install openvpn
+sudo dnf install openvpn
 ```
 
 If you're on a `apt`-based distro:
 
 ```bash
-$ sudo apt-get install openvpn
+sudo apt-get install openvpn
 ```
 
 Tested and works on Fedora 23. Dunno about Windows. Patches welcome.
 
-### Usage
+## Usage
 
 Simply run:
 
 ```bash
-$ ./autovpn
+./autovpn
 ```
 
 and you're done. You'll be connected to a server in the US. Welcome to the US!
@@ -51,24 +51,24 @@ You can give a country if you want. For example, if you want to connect to a ser
 in Japan:
 
 ```bash
-$ ./autovpn JP
+./autovpn JP
 ```
 
 You may need superuser privileges. Don't worry, I'm not running `rm -rf --no-preserve-root /`
 underneath. It's for `openvpn`.
 
-### Contributing
+## Contributing
 
 All patches welcome!
 
-### Disclaimer
+## Disclaimer
 
 This is completely insecure. Please do not use this for anything important. Get a
 real and secure VPN. This is mostly a fun tool to get a VPN for a few minutes.
 
-### License
+## License
 
-```
+```bash
     autovpn - simple automatic VPN in a country of your choice
     Copyright (C) 2017  Adhityaa Chandrasekar
 

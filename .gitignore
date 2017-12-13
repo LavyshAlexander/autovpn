@@ -1,2 +1,8 @@
+# Git Ignore Files
+
 autovpn
+autovpn.exe
+
 *.orig
+
+README.pdf
